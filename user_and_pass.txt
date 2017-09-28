@@ -1,0 +1,27 @@
+to change pass local-login
+
+for Cline:
+default:
+uname admin
+upass admin
+changed:
+uname admin
+upass Avaya123$
+for UI:
+default:
+uname admin
+upass admin123
+changed:
+uname admin
+upass Avaya123$
+view postlogs by cd /var/log/Avaya/
+jboss is an app server that runs smgr app
+so to check wether jboss is running in the backgorund follow the steps:
+first check service jboss status by going in root
+then if service is running
+cd /opt/Avaya/vsp/
+then go to twiddle
+run sh JBossStatus.sh
+if it states its in stopped state do  service jboss restart
+natted ip to access private nw from public 172.16.3.9 -> 148.147.163.111
+
